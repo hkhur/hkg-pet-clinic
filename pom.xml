@@ -15,7 +15,7 @@
     </parent>
     <groupId>guru.springframework</groupId>
     <artifactId>hkg-pet-clinic</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <name>hkg-pet-clinic</name>
     <description>HKG Pet Clinic Project</description>
     <properties>
@@ -46,10 +46,11 @@
         </plugins>
     </build>
 
-    <scm>
+   <!-- <scm>
         <developerConnection>
             scm:git:git@github.com:hkhur/hkg-pet-clinic.git
         </developerConnection>
-    </scm>
+        <tag>hkg-pet-clinic-0.0.1</tag>
+    </scm>-->
 
 </project>
