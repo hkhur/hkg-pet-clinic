@@ -2,7 +2,6 @@ package guru.springframework.hkgpetclinic.services.map;
 
 import guru.springframework.hkgpetclinic.model.Owner;
 import guru.springframework.hkgpetclinic.model.Pet;
-import guru.springframework.hkgpetclinic.model.PetType;
 import guru.springframework.hkgpetclinic.services.OwnerService;
 import guru.springframework.hkgpetclinic.services.PetService;
 import guru.springframework.hkgpetclinic.services.PetTypeService;
@@ -41,7 +40,7 @@ public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements 
                     }
                     if (pet.getId() == null) {
                         Pet savedPet = petService.save(pet);
-                        pet.setId(savedPet.getId());
+                        pet.setId(savedPet.getId()); // defensive coding
                     }
                 });
             }
